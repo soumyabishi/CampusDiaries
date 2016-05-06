@@ -1,3 +1,2 @@
-## zf5_project
+## CampusDiaries NYPS landing page
 
-(place your readme here)
