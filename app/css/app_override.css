@@ -4323,7 +4323,7 @@ button:focus {
   top: 0;
   visibility: hidden;
   width: 100%;
-  z-index: 1005;
+  z-index: 9999999;
   left: 0;
   background-color: #FFFFFF;
   padding: 1.875rem;
@@ -4923,7 +4923,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333; }
+  background: #fff; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -4947,7 +4947,7 @@ meta.foundation-mq-topbar {
       z-index: 98; }
 
 .top-bar {
-  background: #333333;
+  background: #fff;
   height: 2.8125rem;
   line-height: 2.8125rem;
   margin-bottom: 0;
@@ -5012,7 +5012,7 @@ meta.foundation-mq-topbar {
       margin-top: -16px;
       top: 50%; }
       .top-bar .toggle-topbar.menu-icon a {
-        color: #FFFFFF;
+        color: #000;
         height: 34px;
         line-height: 33px;
         padding: 0 2.5rem 0 0.9375rem;
@@ -5025,7 +5025,7 @@ meta.foundation-mq-topbar {
           margin-top: -8px;
           top: 50%;
           right: 0.9375rem;
-          box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+          box-shadow: 0 0 0 1px #000, 0 7px 0 1px #000, 0 14px 0 1px #000;
           width: 16px; }
         .top-bar .toggle-topbar.menu-icon a span:hover:after {
           box-shadow: 0 0 0 1px "", 0 7px 0 1px "", 0 14px 0 1px ""; }
@@ -5033,7 +5033,7 @@ meta.foundation-mq-topbar {
     background: transparent;
     height: auto; }
     .top-bar.expanded .title-area {
-      background: #333333; }
+      background: #fff; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span::after {
@@ -5064,11 +5064,10 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #333333; }
+    background: #fff; }
     .top-bar-section ul li > a {
       color: #FFFFFF;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       padding-left: 0.9375rem;
@@ -5201,16 +5200,13 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > button.info:hover,
         .top-bar-section ul li > button.info:focus {
           color: #FFFFFF; }
-    .top-bar-section ul li:hover:not(.has-form) > a {
-      background-color: #555555;
-      color: #FFFFFF;
-      background: #222222; }
+   
     .top-bar-section ul li.active > a {
       background: #008CBA;
-      color: #FFFFFF; }
+      color: #000; }
       .top-bar-section ul li.active > a:hover {
         background: #0078a0;
-        color: #FFFFFF; }
+        color: #000; }
   .top-bar-section .has-form {
     padding: 0.9375rem; }
   .top-bar-section .has-dropdown {
@@ -5291,7 +5287,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.0625em) {
   .top-bar {
-    background: #333333;
+    background: #fff;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -5345,20 +5341,18 @@ meta.foundation-mq-topbar {
       background: #222222;
       color: #FFFFFF; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      background: #333333;
+     
       line-height: 2.8125rem;
       padding: 0 0.9375rem; }
-      .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #555555;
-        background: #222222; }
+     
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       background: #008CBA;
-      color: #FFFFFF;
+      color: #000;
       line-height: 2.8125rem;
       padding: 0 0.9375rem; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #0078a0;
-        color: #FFFFFF; }
+        color: #000; }
     .top-bar-section .has-dropdown > a {
       padding-right: 2.1875rem !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -5447,10 +5441,7 @@ meta.foundation-mq-topbar {
       left: 0; }
       .top-bar-section .left li .dropdown li .dropdown {
         left: 100%; }
-  .no-js .top-bar-section ul li:hover > a {
-    background-color: #555555;
-    background: #222222;
-    color: #FFFFFF; }
+  
   .no-js .top-bar-section ul li:active > a {
     background: #008CBA;
     color: #FFFFFF; }
@@ -6821,3 +6812,14 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 /* all app scss styles here */
+
+
+
+.top-bar-section li:not(.has-form) a:not(.button){
+  background: transparent !important;
+}
+
+
+header ul li a:hover {
+    color: #48205D !important;
+}

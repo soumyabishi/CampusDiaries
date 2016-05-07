@@ -1,12 +1,12 @@
 {
-  "name": "CampusDiaries NYPS landing page",
+  "name": "zf5_project",
   "description": "",
   "version": "0.0.1",
   "license": "",
-  "homepage": "campusdiaries.com",
+  "homepage": "",
   "author": {
-    "name": "Soumya",
-    "email": "hello@soumyabishi.co"
+    "name": "",
+    "email": ""
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,12 @@
     "grunt-contrib-connect": "~0.11.2",
     "grunt-wiredep": "~2.0.0",
     "grunt-usemin": "~3.1.1",
-    "grunt-contrib-imagemin": "0.9.4",
+    "grunt-contrib-imagemin": "1.0.0",
     "grunt-newer": "~1.1.1",
     "autoprefixer": "6.0.3",
     "grunt-postcss": "~0.6.0"
+  },
+  "dependencies": {
+    "grunt-contrib-imagemin": "^1.0.0"
   }
 }
